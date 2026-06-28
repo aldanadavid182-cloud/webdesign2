@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lumina Salon Boutique</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-container": "#f4d7d4",
+                      "on-secondary-fixed-variant": "#494458",
+                      "inverse-primary": "#dcc0bd",
+                      "surface-container": "#f0eee9",
+                      "secondary-fixed": "#e7def8",
+                      "background": "#fbf9f4",
+                      "tertiary": "#735c00",
+                      "surface-container-highest": "#e4e2dd",
+                      "on-secondary-container": "#665f75",
+                      "on-surface": "#1b1c19",
+                      "on-tertiary-fixed": "#241a00",
+                      "on-tertiary-fixed-variant": "#574500",
+                      "on-tertiary-container": "#775e00",
+                      "primary-fixed": "#f9dcd9",
+                      "outline-variant": "#d2c3c1",
+                      "primary": "#6f5957",
+                      "error-container": "#ffdad6",
+                      "on-background": "#1b1c19",
+                      "secondary": "#615b71",
+                      "primary-fixed-dim": "#dcc0bd",
+                      "surface-container-high": "#eae8e3",
+                      "inverse-surface": "#30312e",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed": "#ffe088",
+                      "on-surface-variant": "#4f4443",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-fixed": "#271816",
+                      "on-error": "#ffffff",
+                      "tertiary-fixed-dim": "#e9c349",
+                      "on-primary-container": "#725c5a",
+                      "outline": "#817473",
+                      "surface-bright": "#fbf9f4",
+                      "tertiary-container": "#ffda6c",
+                      "surface-tint": "#6f5957",
+                      "secondary-container": "#e5dcf6",
+                      "surface-container-low": "#f5f3ee",
+                      "inverse-on-surface": "#f2f1ec",
+                      "on-primary-fixed-variant": "#564240",
+                      "error": "#ba1a1a",
+                      "on-secondary": "#ffffff",
+                      "surface-variant": "#e4e2dd",
+                      "secondary-fixed-dim": "#cbc3dc",
+                      "surface-dim": "#dbdad5",
+                      "surface": "#fbf9f4",
+                      "on-secondary-fixed": "#1d192b",
+                      "on-tertiary": "#ffffff",
+                      "on-primary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "8px",
+                      "section-gap": "80px",
+                      "grid-gutter": "24px",
+                      "element-gap": "16px",
+                      "grid-columns": "12",
+                      "container-padding": "24px"
+              },
+              "fontFamily": {
+                      "button-text": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "label-caps": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "button-text": [
+                              "14px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden relative">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center px-grid-gutter h-20 max-w-7xl mx-auto">
+<button class="text-primary hover:text-primary-fixed-dim transition-colors duration-300 md:hidden scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<a class="font-headline-md text-headline-md tracking-widest text-primary dark:text-primary-fixed-dim scale-95 transition-transform duration-200" href="#">LUMINA SALON</a>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex gap-grid-gutter items-center">
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary font-label-caps text-label-caps uppercase hover:text-primary transition-colors duration-300 py-2" href="#hero">Inicio</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-caps text-label-caps uppercase hover:text-primary transition-colors duration-300 py-2" href="#servicios">Servicios</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-caps text-label-caps uppercase hover:text-primary transition-colors duration-300 py-2" href="#galeria">Galería</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-caps text-label-caps uppercase hover:text-primary transition-colors duration-300 py-2" href="#contacto">Contacto</a>
+</nav>
+<button class="text-primary hover:text-primary-fixed-dim transition-colors duration-300 scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</header>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-24 md:bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-[0_10px_30px_rgba(112,104,98,0.2)] hover:scale-110 transition-transform duration-300 flex items-center justify-center" href="#">
+<!-- SVG for WhatsApp since Material Symbols doesn't have a direct brand icon -->
+<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.347-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.876 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+</svg>
+</a>
+<!-- HERO SECTION -->
+<section class="relative min-h-screen flex items-center justify-center pt-20 px-container-padding" id="hero">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-60" data-alt="A meticulously designed, high-end minimalist beauty salon interior. Soft, diffused natural light pouring through large windows, illuminating warm beige and pale pink tones. Sleek golden accents on mirrors, pristine white surfaces, and organic, curved furniture. The aesthetic is serene, editorial, and flawlessly clean, echoing a luxury self-care sanctuary." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBHDgY8YtUrJeO8FkvNZA2wk4xeaDbMLvygszSUo2A_wTsQrMrK7ix_bZTWyxCPw7i8mjfFg170iBht7t-z3GIl_ay9XBv1cqfEQPoRieQ243XBeQkf28imOSyTxnXyCI9-btGQNF-JC1cE2SoTqy_VhSYhT0HIFDOAYtOtyqS9j0of29kGzULlw09QpuXxKvg7EdOGJ5gZ8yQTzv5Ztl1fbzeFF4i7MzAS0w6yHoWMOCu1apOzbBO7nmRn0D4U35LAFy8_FhP_7_fb')"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-background/40 to-background"></div>
+</div>
+<div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center gap-element-gap">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase mb-4 block">Santuario de Belleza</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6">Lumina Salon:<br/>Tu belleza, nuestra inspiración</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-8">Descubre un espacio diseñado para la serenidad y el cuidado personal. Experimenta la hospitalidad boutique con resultados de alta precisión.</p>
+<button class="bg-primary hover:bg-surface-tint text-on-primary font-button-text text-button-text px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+                Agendar cita por WhatsApp
+                <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<div class="mt-12 bg-surface/80 backdrop-blur-sm px-6 py-3 rounded-full border border-surface-container-highest inline-flex items-center gap-4 text-sm text-on-surface-variant shadow-[0_10px_30px_rgba(112,104,98,0.05)]">
+<span class="material-symbols-outlined text-primary text-base" data-icon="schedule">schedule</span>
+<span>Lunes a Sábado • 9:00 AM - 8:00 PM</span>
+</div>
+</div>
+</section>
+<!-- SOBRE NOSOTROS -->
+<section class="py-section-gap px-container-padding bg-surface-bright relative" id="sobre-nosotros">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-grid-gutter items-center">
+<div class="order-2 md:order-1 relative rounded-lg overflow-hidden h-[500px] shadow-[0_10px_30px_rgba(112,104,98,0.08)]">
+<img class="object-cover w-full h-full" data-alt="Close up of a tranquil treatment room in a boutique spa. Warm glowing ambient lighting highlights a plush, pristine white treatment bed resting on a textured cream rug. In the background, delicate lavender and soft pink floral arrangements sit on a minimal stone counter. A single thin gold mirror reflects the serene, clean, high-fashion aesthetic of the space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtkZCcgI_4KiFVOhtDa1-RqwzGFfPpiP4QVH4JyRGjmXDmj4vWAo9Jj-ws_OtsnsxthBKHEve7w5wUrcTUCF03XyTF82Lgo_1xahSzcErv9bjkhw9NOt3kHmxO8mz_kJE9WriRbY2YMJmesv-twzWmjcoPmnTuuPqwjhAOYaMiQdetr7UGQH51ei3tOq3iHIYTFNOZz5tfbuskcsqKL4_tBZrgv-oS45f4UAWN63QjiDYZBy3zcG79ItPJnWcKq98dJvbK2722VdL8"/>
+</div>
+<div class="order-1 md:order-2 flex flex-col gap-element-gap md:pl-12">
+<h2 class="font-headline-md text-headline-md text-on-surface">Un refugio para tu esencia</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">En Lumina Salon, creemos que la belleza es una extensión de tu bienestar interior. Hemos creado más que un salón de belleza; hemos diseñado un santuario donde cada detalle, desde la iluminación cálida hasta nuestras selectas esencias, está pensado para brindarte paz.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Nuestro equipo de expertos combina técnicas de precisión clínica con la calidez de la hospitalidad boutique, asegurando que cada visita sea una experiencia transformadora tanto física como emocionalmente.</p>
+<div class="mt-4">
+<button class="text-primary font-button-text text-button-text hover:text-surface-tint flex items-center gap-2 border-b border-primary pb-1 w-fit transition-colors">
+                        Conoce nuestra filosofía
+                        <span class="material-symbols-outlined text-sm" data-icon="east">east</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVICIOS -->
+<section class="py-section-gap px-container-padding bg-background" id="servicios">
+<div class="max-w-7xl mx-auto text-center mb-16">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase block mb-4">Experiencias</span>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">Nuestros Servicios</h2>
+</div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-grid-gutter">
+<!-- Servicio 1 -->
+<div class="bg-surface rounded-[2rem] overflow-hidden shadow-[0_10px_30px_rgba(112,104,98,0.05)] hover:-translate-y-2 transition-transform duration-300 group flex flex-col h-full border border-transparent hover:border-[#D4AF37]/20">
+<div class="h-64 overflow-hidden">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A professional stylist delicately styling a client's shiny, healthy hair. Focus on the soft, flowing waves of the hair and the stylist's precise hands. The background is a clean, bright minimalist salon with warm neutral tones, soft pink accents, and a tranquil atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYkAEIkuiL3E-T02NitwnBur4REBD4Y6Z_jAfnsEt1vjVuJ_z77A3VlNoOvAVnkObvuqq_ePWNFc_Duu1gXBQu1D7hzeSKpEC_pvpoBv-qBs_SbDTzpHSGeUsxKh-pCuR6s1b-LtLHpogKRawU7lnpw8y1AokAjDrFYT7TUPiqigaI09vkWLuRsj4BnzN5g4GRCscZKPudOd0TdGIQrADoDbX5WGIQhE5e-Ilecd-bi8ZXpeqKxtlqMWCWEm-Oplu-TYIuk8LxMDCi"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-md text-2xl text-on-surface mb-2">Diseño de Cabello</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Cortes personalizados, colorimetría experta y tratamientos de hidratación profunda para un cabello radiante y lleno de vida.</p>
+<div class="pt-4 border-t border-surface-container-highest">
+<button class="text-primary font-button-text text-button-text hover:text-surface-tint uppercase tracking-widest text-xs">Ver menú completo</button>
+</div>
+</div>
+</div>
+<!-- Servicio 2 -->
+<div class="bg-surface rounded-[2rem] overflow-hidden shadow-[0_10px_30px_rgba(112,104,98,0.05)] hover:-translate-y-2 transition-transform duration-300 group flex flex-col h-full border border-transparent hover:border-[#D4AF37]/20">
+<div class="h-64 overflow-hidden">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Close up of a perfect, minimalist manicure in soft pastel lavender. The hands are resting gently on a warm beige textured fabric. The lighting is bright and clean, highlighting the glossy finish of the nails and the flawless cuticle work. High-end editorial beauty style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAskHwGwWCSoVg5mx1qAlF27ym9euw6sbo09Kcf6nl3RLz-bPn7YOmImFnhzmnYpxq3WraGrP9ExKtNa_Yj0uwj-dBNc4G3Db6tZGbOEf8naTshk0iArKnlkwWWfdaUXsVhYUJlYBzH1u3RmjUAbY0tKytCSPH6LC_Dc4SxFzKmjvlEKJTUi97xaKrZQcbVLPtopW_1BjMPAhtOC_UUPMMt0rLxkp0RYZ0JsFyNV70klkKhVvAk4aBO4vniJLuQe0oZxm7eMjur2me2"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-md text-2xl text-on-surface mb-2">Spa de Uñas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Manicura y pedicura clínica con acabados impecables. Utilizamos productos premium para la salud y belleza de tus manos y pies.</p>
+<div class="pt-4 border-t border-surface-container-highest">
+<button class="text-primary font-button-text text-button-text hover:text-surface-tint uppercase tracking-widest text-xs">Ver menú completo</button>
+</div>
+</div>
+</div>
+<!-- Servicio 3 -->
+<div class="bg-surface rounded-[2rem] overflow-hidden shadow-[0_10px_30px_rgba(112,104,98,0.05)] hover:-translate-y-2 transition-transform duration-300 group flex flex-col h-full border border-transparent hover:border-[#D4AF37]/20">
+<div class="h-64 overflow-hidden relative">
+<div class="absolute top-4 left-4 bg-secondary-fixed text-on-secondary-fixed-variant px-4 py-1 rounded-full font-label-caps text-xs tracking-widest shadow-sm z-10">Más Solicitado</div>
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A serene facial treatment scene. A client with glowing, dewy skin is receiving a gentle facial massage by an esthetician. Soft, warm natural light filters through the room. The environment is impeccably clean, minimalist, featuring soft beige and white tones, exuding premium self-care luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7sel-XTqEuHWuKrMsEnZv-TTWpOxCPvOdXvCxHdInkBi1O0L4O5-YGVA9KuyUnxoJfUUgcT6jwSP0eDLN9rGjBxLzP89OA0YBc0pgyenM_HqmygZGk4Fg510raEKv3nOZYXGzj24GP_llryF4LfwMoXR6L45rsT47nCuT82YMSf6gxQZRd2cGuull-yErbNUCSt8bdZdwjLM3ltd0EEM0RtnTKCeFdnzDf1GqHV5veKznXwISjor6ygAG3ukXOs1h6GoXWHW9B-ea"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-md text-2xl text-on-surface mb-2">Cuidado Facial</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Limpiezas profundas, terapias de hidratación y tratamientos antiedad personalizados para revelar la luminosidad natural de tu piel.</p>
+<div class="pt-4 border-t border-surface-container-highest">
+<button class="text-primary font-button-text text-button-text hover:text-surface-tint uppercase tracking-widest text-xs">Ver menú completo</button>
+</div>
+</div>
+</div>
+<!-- (Omitting 3 more services for brevity, keeping layout clean and spacious) -->
+</div>
+</section>
+<!-- GALERÍA (Masonry) -->
+<section class="py-section-gap px-container-padding bg-surface-bright" id="galeria">
+<div class="max-w-7xl mx-auto text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Nuestra Magia en Acción</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">Un vistazo a las transformaciones y momentos de cuidado creados en nuestro santuario.</p>
+</div>
+<div class="max-w-7xl mx-auto columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+<div class="break-inside-avoid rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(112,104,98,0.05)] relative group">
+<img class="w-full object-cover" data-alt="A stunning balayage hair transformation on a model with long flowing waves. The hair transitions smoothly from a dark root to bright creamy blonde ends. Set against a clean, warm white studio background typical of a luxury beauty editorial." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtGteaTv6oDKMxAfatTlGqXBLYVSez9tu8fD8D1UezxI6xT618Tj2dVCxu6W3JPgd7SmZ8H6PRn2dkICHqblek1iq_WTgji53Cp0S4kWdXDFfG5EJJJWF-W4xi0gzzXBmcIncgv2rgBjGx_ije62CaiTm7cm-nldhVxLZzL0R3P5c5is3cqGxfBLS9aJnuK0_JVCtnYCbku46KQ-ZM3R0l7M7pjs9tv9KwVIttty5tBSvFw0KKD_39-pjwqX0MjmXwK3rZLGmoKdMY"/>
+<div class="absolute inset-0 bg-on-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="favorite">favorite</span>
+</div>
+</div>
+<div class="break-inside-avoid rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(112,104,98,0.05)] relative group">
+<img class="w-full object-cover" data-alt="A close up of a flawless makeup application featuring soft, glowing skin, subtle pink blush, and a perfectly defined neutral lip. The lighting is soft and flattering, highlighting the minimalist 'no-makeup makeup' look favored by high-end boutique salons." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdQM_MYgprO9AQKq7En8Xy109EsFCbGHllSgljmodFv-DuO3mza_87lOtGUw_hTROHg1Sz1_0j57Z6j956ZC6pMu4UFzgPNEWtXmFPeKbVFcF5_bxDXR6fEOEBfXPDezuONLLnbm2MZF9m4oLp9dXTh1hUo8lMqXEObXyWkgbOnPVDb7fiQNMjBwx7cFcTIXVUNX_QAxTQajCeHMwDVoZkFrs72JxUBiSgYA4WxQztABS2qzxXiv59EseudWFXcarbcn4XxEv_Vgjz"/>
+<div class="absolute inset-0 bg-on-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="favorite">favorite</span>
+</div>
+</div>
+<div class="break-inside-avoid rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(112,104,98,0.05)] relative group">
+<img class="w-full object-cover" data-alt="An elegant, architectural nail art design on almond-shaped nails. The design features a sheer nude base with delicate, thin gold foil accents near the cuticle. The hand is holding a smooth white stone, set against a soft lavender background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrZbv7hZTFyepmJI9t-V-vJK7xlw3WNypElabgGqV7EbpWx0HfHNlJ7WsSYXUIN-mU7MdfjoUV-W-yAKYBlzNJLyh8oOsj3pTVHtF56gnxTRbYGTZeDlTzW3AsgF-dTlBzaRmnjn8CwrNjxfXJwD822-xQFIHlBTMca_0xCKc24UU8NHznygFbQUVCg7iAh36kGMREJnwsA1dH5evq47fe2_AvxTPCrM0BPYT2wRYfdAKVS4K00Kaw27TuWa71MPYorZ98LE1KWKIl"/>
+<div class="absolute inset-0 bg-on-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="favorite">favorite</span>
+</div>
+</div>
+<div class="break-inside-avoid rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(112,104,98,0.05)] relative group">
+<img class="w-full object-cover" data-alt="A wide shot of the salon interior showing two elegant styling stations. Large circular mirrors framed in thin brushed gold, pale pink velvet chairs, and sleek floating wooden shelves. The floor is a polished pale terrazzo. The atmosphere is calm, bright, and inviting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWhDWQLhBNbsgF7sdq2aGhUg-C9ORVVdihOx2t7Q4QZS8CJ-H-Q5nll2WPwT6mwzUpgaRYE7haO4DLarrkBPgKoeWEpW3XDTxHLVUz7WqmZonw6DNWLW_MBdR5ac_Kef3dS7tiva03-v_c1xR7ff1DNlkA8hy2E0o3BuMJiUOsyiG3xzyrIF02NQCImq3U_y205sslfY7Dd8ueQc_ds1_ay3xChNHPjizdRLJQJumA0vvs_Pdh7Cp67nQfnTKTk537R1AN1WJDA4fq"/>
+<div class="absolute inset-0 bg-on-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="favorite">favorite</span>
+</div>
+</div>
+<div class="break-inside-avoid rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(112,104,98,0.05)] relative group">
+<img class="w-full object-cover" data-alt="A close up of premium hair care products arranged neatly on a warm beige stone tray. Next to the products is a fresh sprig of eucalyptus. Soft, warm natural light creates gentle shadows, emphasizing a clean, organic, luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRI_c8EWKTcwLytDM-MI7eBme4ttNffcsAc5s-S468XQv7UA97xY8XFpBMdKAmfIRM_t8I6j0-wqMW2hnPTobF3U_1T8klYG02LtWfBpoAwofz_JJ2Bmw8SOyxhN2Q705rYCB6F7-24qneOsREGSrzq5IGZDiX6IrWGo4arrhavXAnhPqiN-K31wlmthfDYSR0sxZ9_6Ktyer9abYf8pdZLdZLSC296B4t7tAobOlymzPWa7IP6o3tuwE_-eC3o5ASinURhJfZ6O3Q"/>
+<div class="absolute inset-0 bg-on-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="favorite">favorite</span>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<button class="border border-[#D4AF37] text-on-surface font-button-text text-button-text px-8 py-3 rounded-full hover:bg-primary-container transition-colors duration-300">
+                Ver más en Instagram
+            </button>
+</div>
+</section>
+<!-- PRECIOS / PAQUETES -->
+<section class="py-section-gap px-container-padding bg-background relative overflow-hidden">
+<!-- Decorational blur background element -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary-container/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="text-center mb-16">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-4">Experiencias Integrales</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">Selecciones curadas para brindarte un momento de pausa y renovación completa.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+<!-- Paquete 1 -->
+<div class="bg-surface rounded-3xl p-8 shadow-[0_10px_30px_rgba(112,104,98,0.05)] border border-surface-container-highest">
+<h3 class="font-headline-md text-xl text-on-surface mb-2">Paquete Express</h3>
+<p class="font-body-md text-sm text-on-surface-variant mb-6">Para un respiro rápido en tu día.</p>
+<div class="mb-8">
+<span class="font-headline-md text-3xl text-on-surface">$1,200</span>
+<span class="font-body-md text-sm text-on-surface-variant">MXN</span>
+</div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-sm text-on-surface">Manicura Spa Básica</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-sm text-on-surface">Lavado y Secado Profesional</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-sm text-on-surface">Tratamiento Express Hidratante</span>
+</li>
+</ul>
+<button class="w-full py-3 rounded-full border border-primary text-primary font-button-text hover:bg-primary hover:text-white transition-colors duration-300">Reservar Express</button>
+</div>
+<!-- Paquete 2 (Destacado) -->
+<div class="bg-primary-container rounded-3xl p-8 shadow-xl transform scale-100 lg:scale-105 relative z-10 border border-primary/20">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#D4AF37] text-white px-4 py-1 rounded-full font-label-caps text-xs tracking-widest shadow-md">El Más Popular</div>
+<h3 class="font-headline-md text-2xl text-on-primary-container mb-2">Renovación Total</h3>
+<p class="font-body-md text-sm text-on-primary-container/80 mb-6">Mantenimiento mensual para tu bienestar.</p>
+<div class="mb-8">
+<span class="font-headline-md text-4xl text-on-primary-container">$2,800</span>
+<span class="font-body-md text-sm text-on-primary-container/80">MXN</span>
+</div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="star">star</span>
+<span class="font-body-md text-sm text-on-primary-container font-medium">Facial Luminosidad Profunda</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="star">star</span>
+<span class="font-body-md text-sm text-on-primary-container font-medium">Manicura y Pedicura Spa completas</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="star">star</span>
+<span class="font-body-md text-sm text-on-primary-container font-medium">Corte o Diseño de puntas</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="star">star</span>
+<span class="font-body-md text-sm text-on-primary-container font-medium">Bebida de cortesía (Mimosa o Té)</span>
+</li>
+</ul>
+<button class="w-full py-4 rounded-full bg-primary text-white font-button-text shadow-lg hover:shadow-xl hover:bg-surface-tint transition-all duration-300">Reservar Renovación</button>
+</div>
+<!-- Paquete 3 -->
+<div class="bg-surface rounded-3xl p-8 shadow-[0_10px_30px_rgba(112,104,98,0.05)] border border-surface-container-highest">
+<h3 class="font-headline-md text-xl text-on-surface mb-2">Especial Novias</h3>
+<p class="font-body-md text-sm text-on-surface-variant mb-6">Preparación meticulosa para tu gran día.</p>
+<div class="mb-8">
+<span class="font-headline-md text-3xl text-on-surface">$5,500</span>
+<span class="font-body-md text-sm text-on-surface-variant">MXN</span>
+</div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-sm text-on-surface">Prueba de Peinado y Maquillaje</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-sm text-on-surface">Peinado y Maquillaje HD día del evento</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
+<span class="font-body-md text-sm text-on-surface">Preparación de piel Express</span>
+</li>
+</ul>
+<button class="w-full py-3 rounded-full border border-primary text-primary font-button-text hover:bg-primary hover:text-white transition-colors duration-300">Consultar Disponibilidad</button>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-section-gap px-container-padding bg-surface-container-low">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Preguntas Frecuentes</h2>
+</div>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<div class="bg-surface rounded-2xl p-6 shadow-sm">
+<div class="flex justify-between items-center cursor-pointer">
+<h4 class="font-headline-md text-lg text-on-surface">¿Cómo puedo agendar una cita?</h4>
+<span class="material-symbols-outlined text-primary" data-icon="expand_more">expand_more</span>
+</div>
+<div class="mt-4 pt-4 border-t border-surface-container hidden">
+<p class="font-body-md text-sm text-on-surface-variant">La forma más rápida y directa es a través de nuestro botón de WhatsApp. Nuestro equipo de recepción te atenderá de inmediato para encontrar el horario que mejor se adapte a ti.</p>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="bg-surface rounded-2xl p-6 shadow-sm">
+<div class="flex justify-between items-center cursor-pointer">
+<h4 class="font-headline-md text-lg text-on-surface">¿Qué métodos de pago aceptan?</h4>
+<span class="material-symbols-outlined text-primary" data-icon="expand_more">expand_more</span>
+</div>
+<div class="mt-4 pt-4 border-t border-surface-container">
+<p class="font-body-md text-sm text-on-surface-variant">Aceptamos efectivo, transferencias bancarias y todas las tarjetas de crédito y débito principales (Visa, MasterCard, American Express).</p>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="bg-surface rounded-2xl p-6 shadow-sm">
+<div class="flex justify-between items-center cursor-pointer">
+<h4 class="font-headline-md text-lg text-on-surface">¿Tienen política de cancelación?</h4>
+<span class="material-symbols-outlined text-primary" data-icon="expand_more">expand_more</span>
+</div>
+<div class="mt-4 pt-4 border-t border-surface-container hidden">
+<p class="font-body-md text-sm text-on-surface-variant">Sí, agradecemos que cualquier cancelación o reprogramación se realice con al menos 24 horas de anticipación para poder ofrecer el espacio a otra persona que lo necesite.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- UBICACIÓN & CONTACTO -->
+<section class="py-section-gap px-container-padding bg-background" id="contacto">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-grid-gutter items-center bg-surface rounded-3xl overflow-hidden shadow-[0_10px_30px_rgba(112,104,98,0.05)]">
+<div class="h-[400px] md:h-full w-full bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="A highly detailed map view of a sophisticated, affluent neighborhood in Ciudad de México, like Polanco. The map style is minimal, using soft beige, light grey, and subtle pastel tones to match the website's branding. A delicate golden pin indicates the precise location of the salon." data-location="Ciudad de México" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeJ7nyXJljrrVpn8WbHhsb1tS4gecoI5yBkUCOQc8JLn98dspNs3ha7PB2IZ1KEIxVrhYTIq1yLny6bRkF2EZwSirndJ1c1FFhF0WZpuFcC5emXED2vMG5FJlMxgdOejw9ruzZnEuD5g-GbBV_TnA19WMd8ZAlOV4mwxxDtdQ6DZCFFa252DrVa3rgtdbJpJGM460YBsBg30NEu2KFYa4fEtTvRsgubZJIxTTEs5_LQyWnQ5VCdiF9jDzO8RmnMnTQC6KlhZXhYyrD"/>
+</div>
+<div class="p-8 md:p-12 flex flex-col gap-8">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Visítanos</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Tu oasis de tranquilidad en medio de la ciudad.</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="location_on">location_on</span>
+<div>
+<h4 class="font-button-text text-sm uppercase tracking-widest text-on-surface mb-1">Dirección</h4>
+<p class="font-body-md text-on-surface-variant">Av. Presidente Masaryk 123, Polanco<br/>Ciudad de México, CDMX 11560</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="phone_iphone">phone_iphone</span>
+<div>
+<h4 class="font-button-text text-sm uppercase tracking-widest text-on-surface mb-1">Contacto</h4>
+<p class="font-body-md text-on-surface-variant">+52 55 1234 5678</p>
+<p class="font-body-md text-on-surface-variant text-sm mt-1">hola@luminasalon.mx</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="schedule">schedule</span>
+<div>
+<h4 class="font-button-text text-sm uppercase tracking-widest text-on-surface mb-1">Horarios</h4>
+<p class="font-body-md text-on-surface-variant">Lunes a Sábado: 9:00 AM - 8:00 PM<br/>Domingo: Cerrado</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA FINAL -->
+<section class="py-24 px-container-padding bg-primary-container relative text-center overflow-hidden">
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9InJnYmEoMTExLCA4OSwgODcsIDAuMSkiLz48L3N2Zz4=')] opacity-50"></div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary-container mb-6">Dedícate el tiempo que mereces.</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container/80 mb-10">Permítenos realzar tu belleza natural en un ambiente de absoluta relajación.</p>
+<button class="bg-primary hover:bg-surface-tint text-on-primary font-button-text text-button-text px-10 py-5 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 inline-flex items-center gap-3">
+                Agendar mi visita
+                <span class="material-symbols-outlined text-sm" data-icon="calendar_month">calendar_month</span>
+</button>
+</div>
+</section>
+<!-- Footer Component Injection -->
+<footer class="w-full py-section-gap px-grid-gutter bg-surface-container dark:bg-surface-container-highest">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-grid-gutter max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-2 flex flex-col gap-4">
+<span class="font-headline-md text-headline-md text-primary">LUMINA SALON</span>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant max-w-sm">Tu santuario de belleza y cuidado personal en la Ciudad de México. Hospitalidad boutique, resultados excepcionales.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface">Enlaces</h4>
+<nav class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Servicios</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Promociones</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Ubicación</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Privacidad</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface">Social</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">IG</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">FB</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">TK</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-surface-container-high text-center">
+<p class="font-body-md text-body-md text-on-surface-variant/60">© 2024 Lumina Salon Boutique. Ciudad de México.</p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only - Replaces standard shell logic based on mandate for top-level destinations) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 md:hidden bg-surface dark:bg-surface-dim shadow-[0_-10px_30px_rgba(112,104,98,0.08)] rounded-t-lg z-40">
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed-dim font-bold scale-95 duration-150" href="#hero">
+<span class="material-symbols-outlined mb-1" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-caps text-label-caps">Inicio</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 hover:opacity-100" href="#servicios">
+<span class="material-symbols-outlined mb-1" data-icon="spa">spa</span>
+<span class="font-label-caps text-label-caps">Servicios</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 hover:opacity-100" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="calendar_month">calendar_month</span>
+<span class="font-label-caps text-label-caps">Citas</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 hover:opacity-100" href="#contacto">
+<span class="material-symbols-outlined mb-1" data-icon="location_on">location_on</span>
+<span class="font-label-caps text-label-caps">Contacto</span>
+</a>
+</nav>
+<!-- Very basic inline script for FAQ accordion toggle -->
+<script>
+        document.querySelectorAll('.cursor-pointer').forEach(item => {
+            item.addEventListener('click', event => {
+                const content = item.nextElementSibling;
+                const icon = item.querySelector('.material-symbols-outlined');
+                if(content) {
+                    content.classList.toggle('hidden');
+                    icon.textContent = content.classList.contains('hidden') ? 'expand_more' : 'expand_less';
+                }
+            })
+        });
+
+        // Basic scroll effect for top nav
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if(window.scrollY > 50) {
+                nav.classList.add('shadow-sm');
+                nav.classList.replace('bg-surface/80', 'bg-surface/95');
+            } else {
+                nav.classList.remove('shadow-sm');
+                nav.classList.replace('bg-surface/95', 'bg-surface/80');
+            }
+        });
+    </script>
+</body></html>
